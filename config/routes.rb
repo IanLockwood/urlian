@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'urls' => 'urls#index'
   get 'urls/new' => 'urls#new'
   post 'urls' => 'urls#create'
+  get ':short' => 'urls#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

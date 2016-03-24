@@ -1,0 +1,9 @@
+<h1>Type in your long url!</h1>
+
+	<%= form_for [@url], html:{class: :shorten_form} do |f| %>
+	  <%= f.text_field :long %>
+	  <%= f.submit "Shorten" %>
+	<% end %>
+
+<div id="short-url"></div>
+<% render @url %>
